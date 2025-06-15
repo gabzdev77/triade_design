@@ -190,3 +190,23 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
 }
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.galeria img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
