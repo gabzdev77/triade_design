@@ -211,12 +211,4 @@ body {
   transform: scale(1.05);
 }
 
-body {
-  background: url('img/fundo.jpg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
 
