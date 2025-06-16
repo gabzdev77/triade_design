@@ -3,16 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+ 
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #111;
+  background-color: #ffffff9a;
   color: #fff;
   line-height: 1.6;
 }
 
 header {
-  background: #000;
   padding: 20px;
   text-align: center;
 }
@@ -189,4 +189,119 @@ body {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 0, 85, 0.5);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  line-height: 1.6;
+
+  /* FUNDO COM IMAGEM */
+  background-image: url('./img/fundo.jpg'); /* troque 'fundo.jpg' pelo nome da sua imagem */
+  background-size: cover;             /* cobre toda a tela */
+  background-position: center;        /* centraliza a imagem */
+  background-repeat: no-repeat;       /* não repete */
+  background-attachment: fixed;       /* fundo fixo mesmo com rolagem */
+}
+
+.logo {
+  max-width: 290px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; /* centraliza e dá espaço abaixo */
+}
+
+header {
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Centraliza a logo */
+.logo-centralizada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-centralizada img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Menu alinhado à direita no topo */
+.menu-direita {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-direita a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-direita a:hover {
+  color: #ff0055;
+}
+
+#contato {
+  background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Desfoque do fundo */
+  -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com Safari */
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 30px;
+  max-width: 450px;
+  margin: 40px auto;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contato form input,
+#contato form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+#contato form input::placeholder,
+#contato form textarea::placeholder {
+  color: #ddd;
+}
+
+#contato form input:focus,
+#contato form textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#contato button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+  background-color: #357abd;
 }
